@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cs.dit.mapper.RequestMapper">
+
+	<!-- 페이지네이션 -->
+	<select id="getListPage" resultType="cs.dit.domain.RequestVO">
+		select * from br_request order by rNo desc limit #{pageStart}, #{amount}
+	</select>
+
+	<!-- 목록보기 -->
+	<select id="getList" resultType="cs.dit.domain.RequestVO">
+		select * from br_request order by rNo desc
+	</select>
+	
+	<!-- 추가요청 등록 -->
+	<insert id="insert">
+		insert into br_request (rName, rContent, rDate)
+				values (#{rname}, #{rcontent}, now())
+	</insert>
+	
+	<!-- 요청상세 -->
+	<select id="selectOne" resultType="cs.dit.domain.RequestVO">
+		select * from br_request where rNo = #{rNo}
+	</select>
+	
+	<!-- 페이지 수 계산 -->
+	<select id="getTotal" resultType="int">
+		select count(rNo) from br_request
+	</select>
+	
+</mapper>

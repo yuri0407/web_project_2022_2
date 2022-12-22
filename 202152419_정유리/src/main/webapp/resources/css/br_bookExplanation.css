@@ -1,0 +1,64 @@
+/* common ----------------------------------------------------------------------------------------------------- */
+*{padding:0; margin: 0; box-sizing: border-box; font-family: '筌띾쵐占� �⑥쥓逾�', sans-serif; color:#333333;}
+body{height: 100%; overflow: overlay;}
+
+li{list-style: none;}
+a{text-decoration: none; color:inherit;}
+img{vertical-align: auto; width: 200px;}
+.wrap{min-width: 1500px; height: 100%;}
+
+
+/*header -----------------------------------------------------------------------------------------------------*/
+header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
+header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
+.headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
+
+.head{margin-left: 50px; width: 300px;}
+.head>a:hover{color: rgb(204, 57, 57);}
+
+header nav{width: 600px; margin: 58px 0px 0px 370px;}
+header nav >ul{display: flex;}
+header nav ul a{display: block; text-align: center; background: #fff; padding:10px;}
+
+li.lv1{position:relative; width: 25%;}
+li.lv1 >a{font-size: 18px; font-weight: 600; color: rgb(204, 57, 57);}
+ul.lv2{position:absolute; width: 100%; z-index:998; display: none;}
+ul.lv2 li a{color:#fff; background: rgb(228, 89, 89);}
+
+li.lv1:hover >a{color:#fff; background: rgb(204, 57, 57);}
+ul.lv2 li:hover a{color:#333; background: #fff;}
+
+
+
+/*submenu -----------------------------------------------------------------------------------------------------*/
+.subMenu{float: left; margin-left:10%; padding-left: 25px; padding-top: 40px; width:15%;}
+.subLv1>li{font-size: 15pt; padding: 5px; font-weight: bold; color: rgb(204, 57, 57);}
+.subLv2 li a{display:block; width: 100%; font-size: 12pt; padding:6px; padding-left: 20px; margin: 3px;}
+.subLv2 li:hover a{background-color: rgb(253, 181, 181);}
+.subLv1{margin-bottom: 20px;}
+
+
+/*content -----------------------------------------------------------------------------------------------------*/
+.content{display: block; margin-top: 3%; margin-left:27%; margin-right: 17%; padding:5px;}
+
+.content >*{width: 600px;  align-items: center;}
+.content table{width: 50%; margin-top: 15px;}
+.content h2{margin-bottom: 30px;}
+.bname{margin-left:-10px; font-size:25pt; text-align:center; width:100%;}
+
+.btn{width: 100%; text-align: right;}
+button{padding:5px; width: 80px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; }
+button:hover{background-color: rgb(255, 219, 219);}
+
+
+table{margin-left:30%; margin-right: auto; margin-bottom: 50px;}
+th{background-color: rgb(255, 218, 218);}
+.td{width:100px; padding:15px; font-weight: bold; font-size: 13pt; color: rgb(204, 57, 57);}
+span{font-size: 12pt;}
+.explanation{width: 100%; margin-bottom: 50px; padding:50px; font-size: 12pt; background-color: #FEF6F8;}
+
+
+
+/*footer -----------------------------------------------------------------------------------------------------*/
+.fLogo{padding-left: 20pt;}
+footer{height: 100px; min-width: 1500px; background-color: rgb(255, 200, 200);}

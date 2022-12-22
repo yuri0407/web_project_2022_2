@@ -1,0 +1,64 @@
+/* common ----------------------------------------------------------------------------------------------------- */
+*{padding:0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', sans-serif; color:#333333;}
+body{height: 100%; overflow: overlay;}
+
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: auto; width: 200px;}
+.wrap{min-width: 1500px; height: 100%;}
+
+
+/*header -----------------------------------------------------------------------------------------------------*/
+header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
+header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
+.headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
+
+.head{margin-left: 50px; width: 300px;}
+.head>a:hover{color: rgb(204, 57, 57);}
+
+header nav{width: 600px; margin: 58px 0px 0px 370px;}
+header nav >ul{display: flex;}
+header nav ul a{display: block; text-align: center; background: #fff; padding:10px;}
+
+li.lv1{position:relative; width: 25%;}
+li.lv1 >a{font-size: 18px; font-weight: 600; color: rgb(204, 57, 57);}
+ul.lv2{position:absolute; width: 100%; z-index:998; display: none;}
+ul.lv2 li a{color:#fff; background: rgb(228, 89, 89);}
+
+li.lv1:hover >a{color:#fff; background: rgb(204, 57, 57);}
+ul.lv2 li:hover a{color:#333; background: #fff;}
+
+
+.main{
+    line-height: 130px;
+    text-align: center;
+    margin-top: 30px;
+    height: 130px;
+    min-width: 1500px; 
+    background-color: rgb(255, 150, 150);
+}
+.main>h1{color: #fff; vertical-align: middle;}
+
+/*content -----------------------------------------------------------------------------------------------------*/
+.list{
+    padding: 30px;
+    padding-left: 50px;
+    margin-top: 80px;
+    margin-left : 16%;
+    margin-right : 16%;
+}
+.list>h2{display: inline-block; margin-bottom: 10px;}
+
+
+button{margin-left: 10px; display: inline; font-size: 9pt; padding:3px; background-color: rgba(255, 239, 239, 0); border: 0; border-radius: 3px; }
+button:hover{background-color: rgb(255, 219, 219);}
+
+
+table{border-collapse: collapse; width : 100%;}
+.tablearea{height: 395px; width: auto; overflow: hidden;  background-color: rgb(255, 238, 238); }
+tr{text-align: left;}
+th{background-color: rgb(255, 218, 218); padding: 3px; height: 30px; text-align : center;}
+td{padding: 15px; font-size: 11pt;}
+tr.row:hover{background-color: rgb(255, 195, 195);}
+.bImage{width: 100px;}
+.imgAlign{text-align: center}

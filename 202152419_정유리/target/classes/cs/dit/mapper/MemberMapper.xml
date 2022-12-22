@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cs.dit.mapper.MemberMapper">
+
+	<!-- 페이지네이션 -->
+	<select id="selectOne" resultType="cs.dit.domain.MemberVO">
+		select * from br_member where id = #{id}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="insert">
+		insert into br_member (id, pwd, email)
+				values (#{id}, #{pwd}, #{email})
+	</insert>
+	
+	<!-- 로그인 -->
+	<select id="checkUser" resultType="String">
+		select pwd from br_member where id = #{id} and pwd = #{pwd}
+	</select>
+	
+	<!-- 아이디 중복확인 -->
+	<select id="checkId" resultType="String">
+		select id from br_member where id = #{id}
+	</select>
+	
+	<!-- 회원탈퇴 -->
+	<delete id="delete">
+		delete from br_member where id = #{id}
+	</delete>
+	
+</mapper>
