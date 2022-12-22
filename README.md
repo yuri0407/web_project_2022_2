@@ -62,6 +62,7 @@ br_request|rNo|INT|요청 번호
 ### 2.3 화면 및 기능 구현
 #### 메인화면 (br_main)
 
+![메인화면](https://user-images.githubusercontent.com/94339489/209078083-b3c778a9-8902-4d48-bc8b-4d99bac7499d.jpg)
 
 * 사이트를 처음 들어왔을 때 나오는 메인화면이다.
 * 여러 메뉴로 이동할 수 있고, 도서 몇 가지를 미리 확인해볼 수 있다.
@@ -70,6 +71,7 @@ br_request|rNo|INT|요청 번호
 
 #### 로그인 화면 (br_login)
 
+![로그인](https://user-images.githubusercontent.com/94339489/209078142-6816986d-b45a-40c6-ba30-4d4c52c24a57.jpg)
 
 * 메인화면에서 로그인을 눌렀을 때 나오는 화면이다.
 * 등록되어있는 정보를 입력하면 로그인이 되어 메인화면으로 이동하고, 그렇지 않으면 잘못 입력되었다는 메시지가 출력된다.
@@ -78,6 +80,7 @@ br_request|rNo|INT|요청 번호
 
 #### 회원가입 화면 (br_signUp)
 
+![회원가입](https://user-images.githubusercontent.com/94339489/209078191-c0e38dab-196d-40f2-bbe3-7ded6b376a19.jpg)
 
 * 메인화면이나 로그인 화면에서 '회원가입'을 클릭하면 나오는 화면이다.
 * 아이디 중복체크를 하고 난 다음 정보를 모두 입력하여 회원가입 버튼을 누르면 가입이 완료되었다는 메시지가 출력된다.
@@ -87,6 +90,7 @@ br_request|rNo|INT|요청 번호
 
 #### 도서목록 화면 (br_bookList)
 
+![도서목록](https://user-images.githubusercontent.com/94339489/209078236-96ddd8a5-7dd7-4395-aa6c-6188d4992cdf.jpg)
 
 * 도서목록 메뉴를 클릭하면 나오는 화면이다.
 * 등록되어있는 도서들을 확인할 수 있다.
@@ -96,6 +100,7 @@ br_request|rNo|INT|요청 번호
 
 #### 도서소개 화면 (br_bookExplanation)
 
+![도서소개](https://user-images.githubusercontent.com/94339489/209078265-44f21c3c-8743-4fb3-8665-09ac411536cc.jpg)
 
 * 도서목록 화면에서 자세히 보고 싶은 도서를 클릭했을 때 나오는 도서소개 화면이다.
 * 클릭한 도서의 자세한 정보를 확인할 수 있다.
@@ -104,6 +109,7 @@ br_request|rNo|INT|요청 번호
 
 #### 도서리뷰 화면 (br_reviewList)
 
+![도서리뷰](https://user-images.githubusercontent.com/94339489/209078291-589104f0-a4b3-41b6-bff0-3e326b19fd1b.jpg)
 
 * 도서리뷰 메뉴를 클릭하면 나오는 화면이다.
 * 사용자들이 작성한 리뷰들을 목록으로 확인할 수 있다.
@@ -113,6 +119,7 @@ br_request|rNo|INT|요청 번호
 
 #### 리뷰 상세 화면 (br_reviewDetail)
 
+![리뷰 상세](https://user-images.githubusercontent.com/94339489/209078325-a6a22bcb-f3c6-42a0-b27f-d4739f06394e.jpg)
 
 * 리뷰목록 화면에서 자세히 보고 싶은 리뷰를 클릭했을 때 나오는 화면이다.
 * 사용자가 작성한 리뷰를 상세히 볼 수 있다.
@@ -122,6 +129,7 @@ br_request|rNo|INT|요청 번호
 
 #### 리뷰작성 화면 (br_writeReview)
 
+![리뷰 작성](https://user-images.githubusercontent.com/94339489/209078348-02c7a02f-86ac-4f5a-b100-66b5e8661071.jpg)
 
 * 리뷰목록 화면에서 리뷰등록 버튼을 클릭하면 나오는 화면으로, 로그인한 회원만 들어갈 수 있다.
 * 리뷰내용을 작성한 후 등록하기 버튼을 누르면 리뷰가 등록된다.
@@ -131,6 +139,7 @@ br_request|rNo|INT|요청 번호
 
 #### 질문목록 화면 (br_questionList)
 
+![질문목록](https://user-images.githubusercontent.com/94339489/209078414-b652667f-4442-489d-866c-2dbb349f5d93.jpg)
 
 * Q&A 메뉴를 클릭하면 나오는 질문목록 화면이다.
 * 사용자들이 작성한 질문들이 목록으로 나온다.
@@ -140,6 +149,7 @@ br_request|rNo|INT|요청 번호
 
 #### 질문 상세 화면 (br_questionDetail)
 
+![질문상세](https://user-images.githubusercontent.com/94339489/209078455-ca2e8994-13ba-452c-8a16-511672ed0853.jpg)
 
 * 질문목록 화면에서 자세히 보고 싶은 질문을 클릭하면 나오는 화면이다.
 * 클릭한 질문을 상세히 확인할 수 있다.
@@ -149,6 +159,7 @@ br_request|rNo|INT|요청 번호
 
 #### 질문작성 화면 (br_writeQuestion)
 
+![질문작성](https://user-images.githubusercontent.com/94339489/209078467-4d198e7b-b15b-4677-9353-a91312afec07.jpg)
 
 * 질문목록 화면에서 질문하기 버튼을 클릭하면 나오는 화면으로, 로그인한 회원만 들어갈 수 있다.
 * 질문 제목과 내용을 입력하고 등록하기 버튼을 클릭하면 질문이 등록된다.
@@ -158,6 +169,7 @@ br_request|rNo|INT|요청 번호
 
 #### 도서추가요청 화면 (br_requestList)
 
+![요청목록](https://user-images.githubusercontent.com/94339489/209078501-e78ca696-056c-4046-841b-60ae3bf3d046.jpg)
 
 * 도서추가요청 메뉴를 클릭하면 나오는 화면이다.
 * 사용자들이 등록한 추가요청들이 목록으로 나타난다.
@@ -167,6 +179,7 @@ br_request|rNo|INT|요청 번호
 
 #### 요청 상세 화면 (br_requestDetail)
 
+![요청상세](https://user-images.githubusercontent.com/94339489/209078516-86789672-1980-404f-9d3d-2300f3955539.jpg)
 
 * 자세히 보고 싶은 요청을 클릭하면 나오는 화면이다.
 * 클릭한 요청을 상세히 확인할 수 있다.
@@ -176,6 +189,7 @@ br_request|rNo|INT|요청 번호
 
 #### 요청 작성 화면 (br_writeRequest)
 
+![요청작성](https://user-images.githubusercontent.com/94339489/209078527-121758ae-6166-4ebc-8544-e6b822d07475.jpg)
 
 * 추가요청 목록 화면에서 요청하기 버튼을 클릭하면 나오는 화면으로, 로그인한 회원만 들어갈 수 있다.
 * 닉네임과 내용을 입력하고 등록하기 버튼을 클릭하면 요청이 등록된다.
@@ -185,6 +199,7 @@ br_request|rNo|INT|요청 번호
 
 #### 회원 탈퇴 화면 (br_memWithdrawal)
 
+![회원탈퇴](https://user-images.githubusercontent.com/94339489/209078577-1fbb506b-842d-4b5c-9459-f990cdb3cbf0.jpg)
 
 * 회원 탈퇴 메뉴를 클릭하면 나오는 화면으로, 로그인한 회원만 들어갈 수 있다.
 * 주의사항을 확인한 후 탈퇴하기 버튼을 클릭하면 탈퇴가 완료되었다는 메시지와 함께 로그인되어 있던 회원의 정보가 삭제된다.
